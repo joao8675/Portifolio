@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    height: 100px;
+}
+picture {
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+}
+picture a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 52%, rgb(2, 202, 2) 48%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+.links :hover {
+    color: rgba(0, 0, 0, 0.829);
+}
+.links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.712);
+    transition: all 0.3s;
+}
+.contato a {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgb(2, 202, 2);
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: all 0.2s;
+}
+.contato :hover {
+    box-shadow: 0px 0px 8px 4px rgba(2, 202, 2, 0.397);
+    padding: 12px 32px;
+}
