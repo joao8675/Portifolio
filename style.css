@@ -11,11 +11,17 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 300px;
-    height: 100px;
+    height: 90px;
+    border-bottom: rgba(0, 0, 0, 0.233) 2px solid;
 }
 picture {
     text-transform: uppercase;
     font-family: 'Teko', sans-serif;
+    margin-top: 6px;
+
+}
+picture :hover {
+    font-size: 41px;
 }
 picture a {
     text-decoration: none;
@@ -24,6 +30,7 @@ picture a {
     background-image: linear-gradient(to right, rgb(0, 0, 0) 52%, rgb(2, 202, 2) 48%);
     -webkit-background-clip: text;
     color: transparent;
+    transition: all 0.3s;
 }
 .links {
     display: flex;
@@ -34,7 +41,7 @@ picture a {
     font-family: 'Roboto', sans-serif;
 }
 .links :hover {
-    color: rgba(0, 0, 0, 0.829);
+    color: rgba(0, 0, 0, 0.897);
 }
 .links a {
     text-decoration: none;
@@ -54,6 +61,55 @@ picture a {
     transition: all 0.2s;
 }
 .contato :hover {
+    box-shadow: 0px 0px 8px 4px rgba(2, 202, 2, 0.397);
+    padding: 12px 32px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.left-box {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.left-box h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 420px;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+.left-box p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 620px;
+    text-align: justify;
+    font-weight: 500;
+}
+.contact {
+    margin: 50px 0px;
+}
+.contact a {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: rgb(2, 202, 2);
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: all 0.2s;
+}
+.contact :hover {
     box-shadow: 0px 0px 8px 4px rgba(2, 202, 2, 0.397);
     padding: 12px 32px;
 }
