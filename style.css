@@ -12,7 +12,6 @@ nav {
     justify-content: center;
     gap: 300px;
     height: 90px;
-    border-bottom: rgba(0, 0, 0, 0.233) 2px solid;
 }
 picture {
     text-transform: uppercase;
@@ -68,7 +67,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 100px;
-    gap: 150px;
+    gap: 180px;
     align-items: center;
     justify-content: center;
 }
@@ -112,4 +111,18 @@ header {
 .contact :hover {
     box-shadow: 0px 0px 8px 4px rgba(2, 202, 2, 0.397);
     padding: 12px 32px;
+}
+
+.right-box img {
+    animation: flutuar 2s ease-in-out infinite alternate;
+    position: relative;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 50px
+    }
 }
