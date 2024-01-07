@@ -80,11 +80,14 @@ header {
 .left-box h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    width: 420px;
+    width: 500px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 30px;
     color: rgb(0, 0, 0);
+}
+.dot {
+    color: rgb(2, 202, 2);
 }
 .left-box p {
     display: flex;
@@ -125,4 +128,53 @@ header {
     100% {
         top: 50px
     }
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.especialy-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.especialidades {
+    color: rgb(2, 202, 2);
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.website {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.website ion-icon {
+    font-size: 220px;
+    color: rgb(2, 202, 2);
+    overflow: hidden;
+}
+.website h3 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    margin: 25px 0px ;
+}
+.website p {
+    color: rgba(0, 0, 0, 0.795);
+    text-align: justify;
+    margin: 20px 0px;
 }
