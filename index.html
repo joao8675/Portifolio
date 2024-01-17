@@ -11,19 +11,19 @@
 <body>
     <nav>
         <picture>
-            <a href="#">joaoneto</a>
+            <a href="#" id="home">joaoneto</a>
         </picture>
         <div class="links">
-            <a href="#">Início</a>
-            <a href="#">Especialidades</a>
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
+            <a href="#inicio" class="hover-on">Início</a>
+            <a href="#especialidades" class="hover-on">Especialidades</a>
+            <a href="#sobre" class="hover-on">Sobre</a>
+            <a href="#projetos" class="hover-on">Projetos</a>
         </div>
         <div class="contato">
-            <a href="#">contato</a>
+            <a href="https://github.com/joao8675" target="_blank">Github</a>
         </div>
     </nav>
-    <header>
+    <header id="inicio">
         <section class="left-box">
         <div class="tittle-info"">
             <h1>transformando ideias em realidade digital<span class="dot">.</span></h1>
@@ -32,7 +32,7 @@
                 online dos seus sonhos.
             </p>
             <div class="contact">
-                <a href="#">Entre em contato</a>
+                <a href="#contato">Entre em contato</a>
             </div>
         </div>
         </section>
@@ -40,7 +40,7 @@
                     <img src="./Assets/pngtree-plaited-logo-template-design-in-hexagonal-green-box-vector-png-image_11240296-removebg-preview.png">
             </section>
     </header>
-    <main>
+    <main id="especialidades">
         <div class="especialy-tittle"><h2>minhas <span class="especialidades">especialidades.</span></h2></div>
         <div class="cards">
         <section class="website hover-none">
@@ -60,7 +60,7 @@
         </section>
         </div>
     </main>
-    <section class="about-me">
+    <section class="about-me" id="sobre">
         <div class="ilustrative-img">
             <img src="./Assets/8598082-removebg-preview.png">
         </div>
@@ -71,10 +71,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum architecto nobis itaque suscipit perspiciatis numquam laborum quos ea facere. Recusandae facere facilis deleniti, possimus ullam asperiores odio voluptates eos.</p>
             <div class="about-me-icons">
                 <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/joao-pereira-neto-481961297/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/joao8675" target="_blank"><i class="bi bi-github"></i></a>
             </div>
         </div>
+        <div class="backToHome">
+            <a href="#"><ion-icon name="arrow-up-circle-outline"></ion-icon></a>
+        </div>
     </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

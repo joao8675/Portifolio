@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #080807;
     color: #fafafa;
 }
 ::-webkit-scrollbar {
@@ -50,15 +53,32 @@ picture a {
     align-items: center;
     gap: 70px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
-.links :hover {
-    border-bottom: 1px solid rgba(4, 231, 4, 0.849);
-    transition: all 0.3s;
+.links a::after {
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: rgb(4, 231, 4);
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    transition: 1s;
+}
+.links a:hover::after {
+    width: 542px;
 }
 .links a {
     text-decoration: none;
     font-weight: 500;
-    color: #fafafa; 
+    color: #fafafa;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.links a:hover {
+    color: rgb(17, 9, 9);
+    background-color: #fafafa;
+    border-radius: 40px;
 }
 .contato a {
     text-decoration: none;
@@ -69,9 +89,10 @@ picture a {
     font-weight: 600;
     font-size: 20px;
     padding: 10px 30px;
+    transition: all 0.2s;
 }
-.contato :hover {
-    box-shadow: 0px 0px 8px 4px rgba(4, 231, 4, 0.226);
+.contato a:hover {
+    box-shadow: 0px 0px 8px 4px rgba(4, 231, 4, 0.37);
     padding: 12px 32px;
 }
 header {
@@ -155,6 +176,7 @@ main {
     font-size: 27px;
     text-transform: uppercase;
     color: #fafafa;
+    margin: 100px 0px 150px;
 }
 .especialidades {
     color: rgba(4, 231, 4, 0.849);
@@ -271,5 +293,18 @@ span {
     padding: 10px 12.5px;
     border-radius: 100px;
     transition: all 0.2s;
+}
+.backToHome {
+    position: absolute;
+    left: 1370px;
+    top: 2020px;
+    font-size: 70px;
+    transition: all 0.2s;
+}
+.backToHome ion-icon {
+    color: rgb(0, 218, 0);
+}
+.backToHome:hover {
+    font-size: 75px;
 }
 
