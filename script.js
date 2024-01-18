@@ -60,3 +60,4 @@ setInterval(function() {
     titulo.innerHTML = '';
     typeWriter(titulo, titulo.textContent);
 }, 5000);
+

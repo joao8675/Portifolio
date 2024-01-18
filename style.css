@@ -98,10 +98,11 @@ picture a {
 header {
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 320px;
     gap: 180px;
     align-items: center;
     justify-content: center;
+
 }
 .left-box {
     font-family: 'Montserrat', sans-serif;
@@ -125,7 +126,8 @@ header {
     margin: 0 auto;
     animation: typing 10s steps(40, end) infinite, blink-caret 1s step-end infinite, repeat-animation infinite;
     position: absolute;
-    top: 270px;
+    top: 300px;
+    left: 100px;
 }
 
 @keyframes typing {
@@ -156,6 +158,9 @@ header {
     text-align: justify;
     font-weight: 500;
     color: #fafafae3;
+    position: absolute;
+    left: 100px;
+    top: 450px;
 }
 .contact {
     margin: 50px 0px;
@@ -170,6 +175,9 @@ header {
     font-size: 20px;
     padding: 10px 30px;
     transition: all 0.2s;
+    position: absolute;
+    left: 100px;
+    top: 530px;
 }
 .contact :hover {
     box-shadow: 0px 0px 8px 4px rgba(4, 231, 4, 0.226);
@@ -178,7 +186,9 @@ header {
 
 .right-box img {
     animation: flutuar 2s ease-in-out infinite alternate;
-    position: relative;
+    position: absolute;
+    margin-top: 200px;
+    left: 1010px;
 }
 
 @keyframes flutuar {
@@ -194,6 +204,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #0c0b1896;
 }
 .especialy-tittle{
     display: flex;
@@ -203,7 +214,7 @@ main {
     font-size: 27px;
     text-transform: uppercase;
     color: #fafafa;
-    margin: 100px 0px 150px;
+    margin: 80px 0px 70px;
 }
 .especialidades {
     color: rgba(4, 231, 4, 0.849);
@@ -213,6 +224,19 @@ main {
     flex-direction: row;
     gap: 140px;
     padding: 50px;
+    height: 500px;
+}
+.coming-soon {
+    background-image: url(./Assets/BackgroundComingSoon.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.website {
+    background-image: url(./Assets/BackgroundWebsite.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .website {
     border-radius: 20px;
@@ -224,8 +248,11 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 .cards :hover {
-    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.295);
+    box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.459);
     transform: scale(1.05);
+}
+.hover-none {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.459);
 }
 .hover-none :hover {
     box-shadow: none;
