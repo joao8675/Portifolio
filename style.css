@@ -118,6 +118,33 @@ header {
     margin-bottom: 30px;
     color: rgb(255, 255, 255);
 }
+.title {
+    overflow: hidden;
+    border-right: .15em solid rgba(4, 231, 4, 0.849);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 10s steps(40, end) infinite, blink-caret 1s step-end infinite, repeat-animation infinite;
+    position: absolute;
+    top: 270px;
+}
+
+@keyframes typing {
+    0%, 100% {
+        width: 0;
+    }
+    20%, 25%, 30%, 35%, 40%, 50%, 80%, 90% {
+        width: 62%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(4, 231, 4, 0.849);
+    }
+}
 .dot {
     color: rgba(4, 231, 4, 0.849);
 }
