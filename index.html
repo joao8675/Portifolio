@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./scrollReveal.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./Scripts/script.js"></script>
     <script src="./Scripts/vanillaTilt.js"></script>
     <script src="./Scripts/navFixedScroll.js"></script>
+    <script defer src="./Scripts/scrollReveal.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
@@ -27,7 +31,7 @@
     </nav>
     <header id="inicio">
         <section class="left-box">
-        <div class="tittle-info"">
+        <div class="tittle-info">
             <h1 class="title">transformando ideias em realidade digital<span class="dot">.</span></h1>
             <p>Criatividade e inovacao andam lado a lado. Com uma combinacao de design impactante,
                 funcionalidade intuitiva e otimizacao para resultados, estou pronto para criar a presenca
@@ -43,19 +47,19 @@
             </section>
     </header>
     <main id="especialidades">
-        <div class="especialy-tittle"><h2>minhas <span class="especialidades">especialidades.</span></h2></div>
+        <div class="especialy-tittle"><h2 class="hi1">minhas <span class="especialidades">especialidades.</span></h2></div>
         <div class="cards">
-        <section class="website hover-none">
+        <section class="website hover-none hi2">
             <i class="bi bi-code-square"></i>
             <h3>Website</h3>
             <p>Habilidades com Front-end e iniciando estudos em Back-end.</p>
         </section>
-        <section class="coming-soon hover-none">
+        <section class="coming-soon hover-none hi3">
             <i class="bi bi-three-dots"></i>
             <h3>coming-soon</h3>
             <p>studing</p>
         </section>
-        <section class="coming-soon hover-none">
+        <section class="coming-soon hover-none hi4">
             <i class="bi bi-three-dots"></i>
             <h3>coming-soon</h3>
             <p>studing</p>
@@ -63,38 +67,38 @@
         </div>
     </main>
     <section class="about-me" id="sobre">
-        <div class="ilustrative-img">
+        <div class="ilustrative-img hi5">
             <img src="./Assets/pixelArtGifPng.gif">
         </div>
-        <div class="about-me-info">
+        <div class="about-me-info hi6">
             <h3>muito prazer,
             <span>sou joao pereira neto.</span></h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis veniam quo et sunt aut at nam ut cupiditate! Corrupti accusantium magni placeat recusandae totam consectetur repellat repudiandae odio magnam illum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum architecto nobis itaque suscipit perspiciatis numquam laborum quos ea facere. Recusandae facere facilis deleniti, possimus ullam asperiores odio voluptates eos.</p>
             <div class="about-me-icons">
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/joao-pereira-neto-481961297/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/joao8675" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-whatsapp hi7"></i></a>
+                <a href="https://www.linkedin.com/in/joao-pereira-neto-481961297/" target="_blank"><i class="bi bi-linkedin hi8"></i></a>
+                <a href="https://github.com/joao8675" target="_blank"><i class="bi bi-github hi9"></i></a>
             </div>
         </div>
     </section>
     <section class="projects" id="projetos">
         <section class="myPortifolio">
-             <h3>meus <span>projetos.</span></h3>
+             <h3 class="hi10">meus <span>projetos.</span></h3>
         </section>
         <section class="card-section">
             <div class="project-cards">
-                <div class="img-port" style="background-image: url(./Assets/imagem.jpg);">
+                <div class="img-port hi11" style="background-image: url(./Assets/imagem.jpg);">
                     <div class="overlay">
                         <h3>Site de Viagens.</h3>
                     </div>
                     </div>
-                <div class="img-port" style="background-image: url(./Assets/imagem.jpg);">
+                <div class="img-port hi12" style="background-image: url(./Assets/imagem.jpg);">
                     <div class="overlay">
                         <h3>Site de Viagens.</h3>
                     </div>
                     </div>
-                <div class="img-port" style="background-image: url(./Assets/imagem.jpg);">
+                <div class="img-port hi13" style="background-image: url(./Assets/imagem.jpg);">
                 <div class="overlay">
                     <h3>Site de Viagens.</h3>
                 </div>
@@ -102,7 +106,7 @@
             </div>
         </section>
     </section>
-    <section class="formDeContato" id="contato">
+    <section class="formDeContato hi14" id="contato">
         <div class="h3-background">
             <h3>Meu <span>contato.</span></h3>
             <form action="" class="form">
