@@ -6,6 +6,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+:root {
+    --body-bg: #fffbff;
+    --body-color: #e6e2e6;
+    --nav-color: #9a979a;
+    --text-color: #1a1a1a;
+
+}
 body {
     background-color: #080807;
     color: #fafafa;
