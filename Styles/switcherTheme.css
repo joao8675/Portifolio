@@ -1,0 +1,25 @@
+.switcher {
+    position: relative;
+    left: 530px;
+    border: solid 1px black;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.76);
+    width: 60px;
+    height: 30px;
+    border-radius: 40px;
+    background-image: url(./Assets/nightPixelArtGif.gif);
+    background-position: 100px 40px;
+    background-size: cover;
+    cursor: pointer;
+}
+.slider {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 1px;
+    top: 0.08em;
+    border-radius: 40px;
+    background-color: aliceblue;
+    background-position: center;
+    background-size: 60px;
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.575);
+}
