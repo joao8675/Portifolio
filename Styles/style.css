@@ -46,6 +46,7 @@ nav.scroll {
     background-color: rgba(0, 163, 0, 0.89);
     -webkit-border-radius: 50px 0px 50px 0px;
     width: 1350px;
+    box-shadow: 0px 0px 8px 2px #fafafa2a;
 }
 nav.scroll picture a {
     background-image: linear-gradient(to right, rgb(255, 255, 255) 52%, black 48%);
@@ -484,6 +485,7 @@ textarea {
     font-size: 18px;
     padding: 10px;
     color: white;
+    resize: none;
 }
 .form button {
     background-color: rgba(4, 231, 4, 0.952);
