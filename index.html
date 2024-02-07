@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./Styles/scrollReveal.css">
     <link rel="stylesheet" href="./Styles/footerStyle.css">
+    <link rel="stylesheet" href="./Styles/form.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./Scripts/script.js"></script>
@@ -110,16 +111,15 @@
     </section>
     <div id="contato"></div>
     <section class="formDeContato hi14">
-        <div class="h3-background">
-            <h3>Meu <span>contato.</span></h3>
-            <form action="" method="POST" class="form" data-form>
-                <div class="name">
-                <input type="text" name="name" id="name" placeholder="Nome*" required>
-                <input type="text" name="last-name" id="last-name" placeholder="Sobrenome*" required>
-               </div>
-                <input type="email" name="email" id="email" placeholder="E-mail*" required>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Mensagem"></textarea>
-                <button type="submit" data-button>Enviar</button>
+        <div class="formContainer">
+            <div class="h3-background myContact">
+                <h3>Meu <span>contato.</span></h3>            
+            </div>
+            <form action="https://formsubmit.co/your@email.com" method="POST" class="contactForm">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <textarea cols="30" rows="10" placeholder="Sua mensagem" class="textArea"></textarea>
+                <button type="submit" class="submit">Enviar <span>Formulário.</span></button>
             </form>
         </div>
     </section>
