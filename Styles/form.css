@@ -1,67 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
 .formDeContato {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring {
+    margin-top: 150px;
+    position: relative;
+    width: 500px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37%/41% 44%;
+    animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%; 
+    animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.login {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 250px;
+    height: 80%;
+    gap: 20px;
 }
-.formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    background: linear-gradient(125deg, #91fff65d, #02acac65);
-    padding: 50px;
-    border-radius: 10px;
-    margin-top: 120px;
-    box-shadow: 0 0 8px 4px #000000;
-    user-select: none;
-}
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-}
-.contactForm input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #00bdbd;
-    box-shadow: 0 0 8px 2px #00000056;
-}
-.myContact {
-    display: flex;
+.login h2 {
     text-transform: uppercase;
-    font-family: 'Teko', sans-serif;
     font-size: 30px;
-    margin: 0 20px 90px;
-}
-.textArea {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    resize: none;
-    border-radius: 5px;
-    border: 1px solid #00bdbd;
-    box-shadow: 0 0 8px 2px #00000056;
-}
-.submit {
-    margin: 20px 0 0;
-    padding: 13px 0 8px;
     font-family: 'Teko', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: 2px solid #00bdbd;
-    border-radius: 30px;
+    color: rgba(4, 231, 4, 0.952);
+}
+.login input {
+    padding: 14px 17px 13px;
+    width: 250px;
+    border-radius: 60px;
+    border: 2px solid #ffffff;
     background: none;
     color: #ffffff;
-    text-transform: uppercase;
-    box-shadow: 0 0 8px 2px #00000056;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.3s;
+    font-family: 'Single Day', cursive;
+    font-size: 17px;
 }
-.submit:hover {
-    background: #004444;
+.login input:focus {
+    outline: none;
+    box-shadow: 0 0 4px 0 #ffffff;
+    transition: all 0.2s;
+}
+.login input::placeholder {
+    color: #ffffff;
+}
+.login textarea {
+    width: 250px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    resize: none;
+    background: none;
+}
+.login textarea:focus {
+    outline: none;
+    box-shadow: 0 0 4px 0 #ffffff;
+    transition: all 0.2s;
+}
+.login textarea::placeholder {
+    color: #ffffff;
+}
+.submit input {
+    background: linear-gradient(to right, #00ff0a, #00a706);
+    border: none;
+    padding: 14px 15px 13px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
 }
