@@ -1,0 +1,10 @@
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 1030px;
+    top: 210px;
+}
+.blob:nth-child(2) {
+    filter: blur(5px);
+}
