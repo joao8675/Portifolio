@@ -16,6 +16,7 @@
     <script src="./Scripts/navFixedScroll.js"></script>
     <script defer src="./Scripts/scrollReveal.js"></script>
     <script src="./Scripts/app.js"></script>
+    <script src="./Scripts/formSubmit.js" defer></script>
     <title>Portfólio</title>
 </head>
 <body class="white">
@@ -64,6 +65,7 @@
                                 M423,302.5Q414,355,380,407.5Q346,460,281,472Q216,484,153,459.5Q90,435,79.5,369Q69,303,55,246Q41,189,81,145Q121,101,168.5,58Q216,15,274,42.5Q332,70,378.5,104Q425,138,428.5,194Q432,250,423,302.5Z;"></animate>
                             </path>
                           </svg>
+                          <h2>Bem Vindo!</h2>
                     </div>
                     <div class="blob">
                         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
@@ -85,7 +87,7 @@
                     </div>
             </section>
     </header>
-    <main id="especialidades">
+    <main id="especialidades" class="especially">
         <div class="especialy-tittle"><h2 class="hi1">minhas <span class="especialidades">especialidades.</span></h2></div>
         <div class="cards">
         <section class="website hover-none hi2">
@@ -151,21 +153,22 @@
                 <i style="--clr: #00ff0a;"></i>
                 <i style="--clr: #bbfdff;"></i>
                 <i style="--clr: #00ff9d;"></i>
-            <form class="login">
+            <form class="login" action="https://api.staticforms.xyz/submit" method="post">
                 <h2>Contato</h2>
                 <div class="inputBx">
-                    <input type="text" placeholder="Nome" required>
+                    <input type="text" name="name" placeholder="Nome" required>
                 </div>
                 <div class="inputBx">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="inputBx">
-                    <textarea cols="30" rows="10" required placeholder="Sua mensagem"></textarea>
+                    <textarea cols="30" rows="10" required name="message" placeholder="Sua mensagem"></textarea>
                 </div>
                 <div class="inputBx submit">
                     <input type="submit" placeholder="Enviar">
+                    <input type="hidden" name="accessKey" value="7dcb29b8-1640-4bde-949a-d4e5140f9c18">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                 </div>
-                
             </form>
         </div>
     </section>

@@ -12,34 +12,32 @@ body {
 }
 ::-webkit-scrollbar {
     width: 13px;
-    border: 5px solid black;
+    border: 5px solid #080f14;
     background-color: rgb(200, 200, 200);
+    border-radius: 60px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(4, 231, 4);
     border-radius: 80px;
-    border: 3px solid black;
+    border: 3px solid #080f14;
 }
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 300px;
-    height: 90px;
+    height: 100px;
     position: fixed;
-    left: 75px;
-    top: 15px;
-    z-index: 9999;
+    z-index: 999999;
     background-color: transparent;
     transition: 0.5s ease;
-    width: 1350px;
+    width: 100%;
 }
 nav.scroll {
-    background-color: rgba(0, 163, 0, 0.89);
-    -webkit-border-radius: 50px 0px 50px 0px;
-    width: 1350px;
-    box-shadow: 0px 0px 8px 2px #fafafa2a;
+    background-color: rgba(0, 163, 0, 0.918);
+    width: 98%;
+    margin-left: 1%;
+    box-shadow: 0px 0px 8px 2px #0000004b;
 }
 nav.scroll picture a {
     background-image: linear-gradient(to right, rgb(255, 255, 255) 52%, black 48%);
@@ -103,11 +101,11 @@ picture a {
     font-weight: 500;
     font-size: 20px;
     padding: 10px 30px;
-    transition: all 0.3s linear;
-    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 8px 0px #00000081;
     position: absolute;
-    left: 1175px;
-    top: 23px;
+    right: 5%;
+    top: 26%;
 }
 .contato a:hover {
     box-shadow: 0px 0px 8px 4px rgba(4, 231, 4, 0.37);
@@ -222,7 +220,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0c0b1896;
 }
 .especialy-tittle{
     display: flex;
@@ -266,11 +263,11 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 .cards :hover {
-    box-shadow: 0px 0px 8px 4px rgba(255, 255, 255, 0.459);
+    box-shadow: 0px 0px 8px 4px #000000;
     transform: scale(1.05);
 }
 .hover-none {
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.459);
+    box-shadow: 0px 0px 10px 0px #00000094;
 }
 .hover-none :hover {
     box-shadow: none;
